@@ -12,4 +12,8 @@ public class Controller {
     public String simpleRest(HttpServletRequest httpRequest){
         return "hello world " + httpRequest.getRequestedSessionId();
     }
+    @GetMapping(path = "new")
+    public String newApi(HttpServletRequest httpServletRequest){
+        return "new api" + httpServletRequest.getRequestedSessionId();
+    }
 }
